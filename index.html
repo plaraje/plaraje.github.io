@@ -6,13 +6,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hello GH Page</title>
 	<style>
+
+		
 		body {
+			--black-color: #000000;
+			--bgGradientPrimaryColor: #00f0ff;
+			--bgGradientSecondaryColor: #33feff;
+			--bgGradientDegree: 45deg;
 			/*background is gradient*/
-			background: linear-gradient(45deg, #00f0ff 10%, #33feff 90%);
+			/*background: linear-gradient(45deg, #00f0ff 10%, #33feff 90%);*/
+			/*background: linear-gradient(var(--bgGradientDegree), var(--bgGradientPrimaryColor) 10%, var(--bgGradientSecondaryColor) 90%);*/
+			background: linear-gradient(45deg, #00f0ff, #33feff , #dfd, #afa, #adf, #aaf, #fad, #faa);
+			overflow: hidden;
+			background-size: 400% 400%;
+			animation: backgroundGradient 5s ease infinite;
+			height: 100vh;
 		}
 		h1{
+			--TitleColor: #fdfdfd;
 			text-align: center;
-			color: #2f2f2f;
+			color: var(--TitleColor);
 			font-family: monospace;
 			font-size: 4em;
 			animation: latido ease-in 1s infinite;
@@ -28,14 +41,16 @@
 		}
 
 		txt{
+			--txtColor: rgb(255, 255, 255);
 			font-size: 1.25em;
-			color: #000;
+			color: var(--txtColor);
 			font-family: monospace;
 		}
 
 		hder{
+			--txtColor: rgb(255, 255, 255);
 			font-size: 2em;
-			color: #000;
+			color: var(--txtColor);
 			font-family: monospace;
 		}
 
@@ -55,6 +70,13 @@
 			75%{transform: scale(1.1);}
 			100%{transform: scale(1);}
 		}
+
+		@keyframes backgroundGradient{
+			0% {background-position: 0% 50%;}
+			50% {background-position: 100% 50%;}
+			100% {background-position: 0% 50%;}
+		}
+
 	</style>
 </head>
 <body>
