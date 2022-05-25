@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300;400;500,600;700;800;900&display=swap);
+
+:root {
+    --color1: #0fe;
+    --color2: #0f7;
+    --color3: #f70;
+    --color4: #ff2045;
+    --color5: #7838af;
+    --primary: #fff;
+    --secondary: #000;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body
+  {
+    min-height: 100vh;
+    background: linear-gradient(45deg,var(--color1),var(--color2),var(--color3),var(--color4),var(--color5));
+    background-size: 400% 400%;
+	animation: backgroundGradient 120s ease infinite;
+    background-attachment: fixed;
+	height: 100vh;
+  }
+  
+
+  html
+  {
+      scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar
+  {
+      display: none;
+  }
+
+
+.nav-bar
+{
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background: linear-gradient(-45deg,var(--color1),var(--color2),var(--color3),var(--color4),var(--color5));
+    background-size: 400% 400%;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.nav-bar:hover,
+.nav-bar.active
+{
+    width: 300px;
+}
+
+.nav-bar ul
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+}
+
+.nav-bar ul li
+{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.nav-bar ul li a
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.nav-bar ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.nav-bar ul li a .icon .fa-solid,
+.nav-bar ul li a .icon .fa-brands
+{
+    font-size: 24px;
+}
+
+
+.nav-bar ul li a .title
+{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+
+.nav-bar ul li:hover
+{
+    background: var(--color5);
+}
+
+.togg-nav
+{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(-45deg,var(--color1),var(--color2),var(--color3),var(--color4),var(--color5));
+    background-size: 400% 400%;
+    animation: none;
+    border-radius: 10px;
+    border: white solid 3px;
+    cursor: pointer;
+}
+
+.togg-nav.active
+{
+    background: linear-gradient(45deg,var(--color4),var(--color5));
+    background-size: 400% 400%;
+}
+
+.togg-nav:before
+{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 57px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.togg-nav.active:before
+{
+    content: '\f00d';
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5
+{
+    margin-left: 70px;
+    /*margin-right: 80px;*/
+    color: var(--primary);
+}
+
+
+
+
+@keyframes backgroundGradient{
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+@keyframes invertGradient{
+    100% {transform: rotateX(180deg);}
+}
+
+@media (max-width: 767px)
+{
+    .nav-bar
+    {
+        left: -60px;
+    }
+    .nav-bar.active
+    {
+        left: 0;
+        width: 100%;
+    }
+}
