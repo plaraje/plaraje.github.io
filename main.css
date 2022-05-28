@@ -87,7 +87,7 @@ a:link{
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -156,6 +156,11 @@ h1 .Big
 .nav-bar.active
 {
     width: 300px;
+}
+
+.button-C
+{
+    z-index: top;
 }
 
 .nav-bar ul
@@ -308,6 +313,7 @@ h5,
 {
     margin-left: 60px;
     color: var(--primary);
+    z-index: -1;
 }
 
 
