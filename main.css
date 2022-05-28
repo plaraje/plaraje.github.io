@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300;400;500,600;700;800;900&display=swap);
 
 :root {
-    --color1: #0fe;
-    --color2: #0f7;
-    --color3: #f70;
-    --color4: #ff2045;
+    --color1: rgb(206, 2, 224);
+    --color2: rgb(118, 0, 187);
+    --color3: #404;
+    --color4: #b91281;
     --color5: #7838af;
     --primary: #fff;
     --secondary: #000;
@@ -23,6 +23,93 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+/* GRID*/
+.test-PostContainer {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1.2fr 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+      ". test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container ."
+      ". test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container ."
+      ". test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container test-Post-title-container ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image ."
+      ". test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-content test-post-separator test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image test-post-image .";
+  }
+  
+  .test-Post-title-container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "test-post-title test-post-title test-post-title"
+      "test-post-title test-post-title test-post-title"
+      "test-post-update . .";
+    grid-area: test-Post-title-container;
+  }
+  
+  .test-post-title { grid-area: test-post-title; }
+  
+  .test-post-update { grid-area: test-post-update; }
+  
+  .test-post-content { grid-area: test-post-content; }
+  
+  .test-post-separator { grid-area: test-post-separator; }
+  
+  .test-post-image { grid-area: test-post-image; }
+  
+/* end of line */  
+  
+a:visited{
+    color: var(--color5);
+}
+a:link{
+    color: var(--color5);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color4);
+    color: var(--primary);
+    text-align: center;
+  }
+
+.vertical-line
+{
+    border-right:1px #ff0000;
+}
+
+h1 .Big
+{
+    font-size: 3em;
+}
+
+  html
+  {
+      scroll-behavior: smooth;
+  }
 
   *{
     margin: 0;
@@ -55,6 +142,7 @@
 
 .nav-bar
 {
+    z-index: top;
     position: fixed;
     width: 60px;
     height: 100%;
@@ -130,10 +218,31 @@ width: 100%;
     background: var(--color5);
 }
 
+.solidBorder 
+{
+    border: solid 3px #fff;
+    border-radius: 15%;
+    border-width: 3px;
+}
+
 .togg-nav
 {
     position: fixed;
     top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(-45deg,var(--color1),var(--color2),var(--color3),var(--color4),var(--color5));
+    background-size: 400% 400%;
+    animation: none;
+    border-radius: 10px;
+    border: white solid 3px;
+    cursor: pointer;
+}
+.GoUp
+{
+    position: fixed;
+    bottom: 10px;
     right: 10px;
     width: 60px;
     height: 60px;
@@ -164,6 +273,19 @@ width: 100%;
     color: white;
 }
 
+.GoUp:before
+{
+    content: '\f3bf';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 57px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
 .togg-nav.active:before
 {
     content: '\f00d';
@@ -175,10 +297,16 @@ h2,
 h3,
 h4,
 h5,
-.footer
+.text
 {
     margin-left: 70px;
     /*margin-right: 80px;*/
+    color: var(--primary);
+}
+
+.footer
+{
+    margin-left: 60px;
     color: var(--primary);
 }
 
@@ -197,15 +325,18 @@ h5,
 
 @media (max-width: 767px)
 {
+
     .nav-bar
     {
         left: -60px;
     }
+
     .nav-bar.active
     {
         left: 0;
         width: 100%;
     }
+    
 
     p,
     h1,
@@ -219,3 +350,26 @@ h5,
         margin-right: 3px;
     }
 }
+/*@media handheld { 
+    :root
+    {
+        --primary: #fff;
+        --bgc: #ff2045;
+        --selColor: #7838af;
+        --navColor: #bc2c7a;
+
+    }
+    body
+    {
+        background-color: var(--bgc);
+    }
+    .nav-bar
+    {
+        background-color: var(--navColor);
+    }
+    .nav-bar ul li:hover
+    {
+        background-color: var(--selColor);
+    }
+
+ }*/
