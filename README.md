@@ -4,6 +4,6 @@ _Answer_ : **Nothing**
 [i said nothing](https://plaraje.github.io)
 
 # Should i steal code from here?
-## No
-### But do i t if u want lol
+- No
+- But do i t if u want lol
 
